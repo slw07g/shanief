@@ -2,16 +2,14 @@ title: Shanief Webb
 email: word-left-snowshoe@duck.com
 description: >- 
   Bridging the gap between high-level security strategy and cloud infrastructure reality. This blog explores the frameworks necessary to build resilient systems, foster cross-functional collaboration, and mentor the next generation of security engineers. From incident response to enterprise security architecture, we focus on the long-term vision of a secure digital future.
-baseurl: "" 
-url: "https://shanief.com"
+baseurl: "/shanief" 
+url: "https://slw07g.github.io"
 
 # Build settings
 remote_theme: pages-themes/architect # Optional: if starting from a base
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-
-excerpt_separator: ""
 
 markdown: kramdown
 highlighter: rouge
