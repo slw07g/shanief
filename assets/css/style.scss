@@ -70,3 +70,55 @@ article {
 .highlight .nb { color: #005cc5; }                    /* Name.Builtin */
 .highlight .nf { color: #6f42c1; }                    /* Name.Function */
 .highlight .m  { color: #005cc5; }                    /* Number */
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $brand-color;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+
+.site-nav a {
+  margin-left: 20px;
+  font-size: 1rem;
+  color: #666;
+  text-decoration: none;
+  transition: color 0.2s;
+
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+.site-footer {
+  margin-top: 5rem;
+  padding-bottom: 3rem;
+  font-size: 0.9rem;
+  color: #888;
+
+  hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin-bottom: 2rem;
+  }
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-links a {
+  margin-left: 15px;
+  color: #888;
+  text-decoration: none;
+  &:hover { color: $brand-color; }
+}
