@@ -9,7 +9,7 @@ baseurl: ""
 url: "https://shanief.com"
 
 # Build settings
-remote_theme: pages-themes/architect # Optional: if starting from a base
+# remote_theme: pages-themes/architect # Optional: if starting from a base
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

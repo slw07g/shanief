@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 @import "jekyll-theme-architect";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
 
@@ -13,12 +14,39 @@ $text-muted: #94a3b8;
 $glass-bg: rgba(255, 255, 255, 0.03);
 $glass-border: rgba(255, 255, 255, 0.05);
 $glass-shine: rgba(255, 255, 255, 0.1);
+=======
+@charset "utf-8";
+
+// Variables
+:root {
+  --bg-color: #f8f9fa;
+  --text-main: #2d3436;
+  --text-muted: #636e72;
+  --brand-color: #2d3436;
+  --accent-color: #6c5ce7; /* Soft Indigo */
+  --accent-hover: #5649c0;
+  --card-bg: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(255, 255, 255, 0.5);
+  --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.02);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+}
+
+// Reset & Base
+* {
+  box-sizing: border-box;
+}
+>>>>>>> Stashed changes
 
 $font-sans: "Inter", sans-serif;
 $font-serif: "Playfair Display", serif;
 
 // --- Reset & Base ---
 body {
+<<<<<<< Updated upstream
   font-family: $font-sans;
   line-height: 1.8;
   color: $text-main;
@@ -328,4 +356,287 @@ p {
         transform: translateY(-3px);
       }
     }
+=======
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  color: var(--text-main);
+  background-color: var(--bg-color);
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(108, 92, 231, 0.05) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(0, 184, 148, 0.05) 0px, transparent 50%);
+  background-attachment: fixed;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--brand-color);
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease, border-bottom 0.2s ease;
+  
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+p {
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+  color: rgba(45, 52, 54, 0.9);
+}
+
+// Layout
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+// Header
+.site-header {
+  padding: 4rem 0 2rem;
+  background: transparent;
+  
+  .header-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .header-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .site-avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: var(--shadow-lg);
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    
+    &:hover {
+      transform: scale(1.05) rotate(2deg);
+    }
+  }
+  
+  .site-title {
+    font-size: 2.5rem;
+    margin: 1rem 0 0.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--brand-color) 0%, #636e72 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  }
+  
+  .site-description {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto;
+    font-weight: 300;
+  }
+}
+
+// Navigation
+.site-nav {
+  display: flex;
+  gap: 1.5rem;
+  background: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 100px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(0,0,0,0.03);
+  
+  a {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+    
+    &:hover {
+      color: var(--accent-color);
+      background: rgba(108, 92, 231, 0.05);
+    }
+  }
+}
+
+// Main Content
+.page-content {
+  padding: 2rem 0;
+}
+
+// Posts List (assuming typical Jekyll index structure)
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 2rem;
+}
+
+.post-list li {
+  background: var(--card-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    
+    a {
+      color: var(--brand-color);
+      &:hover {
+        color: var(--accent-color);
+      }
+    }
+  }
+}
+
+.post-meta {
+  color: #b2bec3;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+// Article / Post Content
+article.post {
+  background: var(--card-bg);
+  padding: 3rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid white;
+  
+  header {
+    text-align: center;
+    margin-bottom: 3rem;
+    
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(135deg, var(--brand-color), #2d3436);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+pre, code {
+  font-family: 'Fira Code', 'Roboto Mono', monospace;
+  font-size: 0.9em;
+}
+
+// Syntax Highlighting Wrapper
+.highlight {
+  background: #2d3436;
+  color: #dfe6e9;
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  margin: 2rem 0;
+  overflow-x: auto;
+  box-shadow: inset 0 2px 10px rgba(0,0,0,0.2);
+  
+  pre { margin: 0; }
+}
+
+blockquote {
+  border-left: 4px solid var(--accent-color);
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  background: rgba(108, 92, 231, 0.05);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+// Footer
+.site-footer {
+  text-align: center;
+  margin-top: 5rem;
+  padding: 3rem 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  
+  hr {
+    border: 0;
+    height: 1px;
+    background: radial-gradient(circle, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
+    margin-bottom: 2rem;
+  }
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  
+  a {
+    opacity: 0.7;
+    &:hover { opacity: 1; transform: translateY(-2px); }
+  }
+}
+
+// Animations
+.fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.scroll-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  article.post { padding: 1.5rem; }
+  .site-header { padding-top: 2rem; }
+  .site-header .site-title { font-size: 2rem; }
+  .site-header .header-flex { gap: 1rem; }
+>>>>>>> Stashed changes
 }
