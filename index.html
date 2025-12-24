@@ -5,12 +5,12 @@ layout: default
 <section class="home">
   <h1>Latest Updates</h1>
   
-  <ul class="post-list" style="list-style: none; padding: 0;">
+  <ul class="post-list">
     {% for post in site.posts %}
-      <li style="margin-bottom: 2rem;">
+      <li>
         <span class="post-meta">{{ post.date | date: "%b %d, %Y" }}</span>
         <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}" style="text-decoration: none; color: #2a2a2a;">
+          <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
           </a>
         </h2>
