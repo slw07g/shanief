@@ -29,47 +29,47 @@ title: About Shanief
     <h2>Arsenal & Qualifications</h2>
     <p class="section-subtitle">A multidisciplinary skillset validation across the security spectrum.</p>
     <div class="certs-grid">
-      <div class="cert-card red-team">
+      <a href="https://www.giac.org/certifications/exploit-researcher-advanced-penetration-tester-gxpn/" class="cert-card red-team" target="_blank">
         <span class="cert-type">OFFENSE</span>
         <span class="cert-title">GXPN</span>
         <span class="cert-desc">Exploit Researcher & Adv. Penetration Tester</span>
-      </div>
-      <div class="cert-card red-team">
+      </a>
+      <a href="https://www.offsec.com/courses/pen-200/" class="cert-card red-team" target="_blank">
         <span class="cert-type">OFFENSE</span>
         <span class="cert-title">OSCP</span>
         <span class="cert-desc">Offensive Security Certified Professional</span>
-      </div>
-      <div class="cert-card red-team">
+      </a>
+      <a href="https://www.giac.org/certifications/penetration-tester-gpen/" class="cert-card red-team" target="_blank">
         <span class="cert-type">OFFENSE</span>
         <span class="cert-title">GPEN</span>
         <span class="cert-desc">GIAC Penetration Tester</span>
-      </div>
-      <div class="cert-card red-team">
+      </a>
+      <a href="https://www.giac.org/certifications/mobile-device-security-analyst-gmob/" class="cert-card red-team" target="_blank">
         <span class="cert-type">OFFENSE</span>
         <span class="cert-title">GMOB</span>
         <span class="cert-desc">Mobile Device Security Analyst</span>
-      </div>
+      </a>
       
-      <div class="cert-card blue-team">
+      <a href="https://www.giac.org/certifications/reverse-engineering-malware-grem/" class="cert-card blue-team" target="_blank">
         <span class="cert-type">DEFENSE</span>
         <span class="cert-title">GREM</span>
         <span class="cert-desc">Reverse Engineering Malware</span>
-      </div>
-      <div class="cert-card blue-team">
+      </a>
+      <a href="https://www.giac.org/certifications/certified-forensic-analyst-gcfa/" class="cert-card blue-team" target="_blank">
         <span class="cert-type">DEFENSE</span>
         <span class="cert-title">GCFA</span>
         <span class="cert-desc">Advanced Forensic Analyst</span>
-      </div>
-      <div class="cert-card blue-team">
+      </a>
+      <a href="https://www.giac.org/certifications/network-forensic-analyst-gnfa/" class="cert-card blue-team" target="_blank">
         <span class="cert-type">DEFENSE</span>
         <span class="cert-title">GNFA</span>
         <span class="cert-desc">Network Forensic Analyst</span>
-      </div>
-      <div class="cert-card blue-team">
+      </a>
+      <a href="https://www.giac.org/certifications/certified-incident-handler-gcih/" class="cert-card blue-team" target="_blank">
         <span class="cert-type">DEFENSE</span>
         <span class="cert-title">GCIH</span>
         <span class="cert-desc">Certified Incident Handler</span>
-      </div>
+      </a>
     </div>
   </section>
   
@@ -135,6 +135,10 @@ title: About Shanief
     border-radius: 20px;
     transition: all 0.3s ease;
     overflow: hidden;
+    /* Link styles */
+    display: block;
+    text-decoration: none;
+    color: inherit;
   }
 
   .cert-card:hover {
