@@ -1,34 +1,48 @@
 @import "jekyll-theme-architect";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
 
-// --- Modern Professional Variables ---
-$brand-color: #1e293b; // Slate 800 - Deep, professional dark blue-grey
-$accent-color: #0f766e; // Teal 700 - Sophisticated accent
-$text-color: #334155;   // Slate 700 - Softer than pure black for text
-$heading-color: #0f172a; // Slate 900 - Strong for headings
-$background: #f8fafc;   // Slate 50 - Very subtle off-white/grey
-$card-bg: #ffffff;
-$border-color: #e2e8f0; // Slate 200
+// --- Creative Theme Variables ---
+$bg-dark: #0f172a;
+$bg-gradient-start: #0f172a;
+$bg-gradient-end: #1e1b4b;
+$accent-primary: #818cf8; // Soft Indigo
+$accent-secondary: #f472b6; // Pink
+$accent-tertiary: #2dd4bf; // Teal
+$text-main: #f8fafc;
+$text-muted: #94a3b8;
+$glass-bg: rgba(255, 255, 255, 0.03);
+$glass-border: rgba(255, 255, 255, 0.05);
+$glass-shine: rgba(255, 255, 255, 0.1);
 
-$font-main: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-sans: "Inter", sans-serif;
+$font-serif: "Playfair Display", serif;
 
 // --- Reset & Base ---
 body {
-  font-family: $font-main;
-  line-height: 1.7;
-  color: $text-color;
-  background-color: $background;
+  font-family: $font-sans;
+  line-height: 1.8;
+  color: $text-main;
+  background-color: $bg-dark;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba($accent-secondary, 0.15) 0%, transparent 20%),
+    radial-gradient(circle at 90% 80%, rgba($accent-tertiary, 0.15) 0%, transparent 20%),
+    linear-gradient(to bottom, $bg-gradient-start, $bg-gradient-end);
+  background-attachment: fixed;
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 a {
-  color: $accent-color;
+  color: $accent-primary;
   text-decoration: none;
-  transition: color 0.2s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  
   &:hover {
-    color: darken($accent-color, 10%);
-    text-decoration: underline;
+    color: lighten($accent-primary, 10%);
+    text-shadow: 0 0 8px rgba($accent-primary, 0.4);
   }
 }
 
@@ -41,21 +55,24 @@ a {
 
 // --- Header ---
 header.site-header {
-  background: $card-bg;
-  border-bottom: 1px solid $border-color;
-  padding: 1.5rem 0;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-  margin-bottom: 3rem;
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid $glass-border;
+  padding: 2rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: padding 0.3s ease;
   
   .header-flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0; // container handles padding
     
     @media (max-width: 600px) {
         flex-direction: column;
-        gap: 1rem;
+        gap: 1.5rem;
         text-align: center;
     }
   }
@@ -64,26 +81,36 @@ header.site-header {
 .header-profile {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 2rem;
   
   @media (max-width: 600px) {
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
   }
 }
 
 .site-avatar {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; // Organic shape
   object-fit: cover;
-  border: 3px solid $card-bg;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  transition: transform 0.2s ease;
+  border: 2px solid rgba($accent-primary, 0.3);
+  box-shadow: 0 0 20px rgba($accent-primary, 0.2);
+  transition: all 0.5s ease-in-out;
+  animation: morph 8s ease-in-out infinite;
   
   &:hover {
-    transform: scale(1.02);
+    border-radius: 50%;
+    transform: rotate(5deg) scale(1.05);
+    border-color: $accent-secondary;
+    box-shadow: 0 0 30px rgba($accent-secondary, 0.3);
   }
+}
+
+@keyframes morph {
+  0% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+  50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+  100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
 }
 
 .header-branding {
@@ -93,169 +120,211 @@ header.site-header {
 }
 
 .site-title {
-  font-size: 1.75rem;
+  font-family: $font-serif;
+  font-size: 2.5rem;
   font-weight: 700;
-  color: $heading-color;
-  text-decoration: none;
-  letter-spacing: -0.025em;
-  margin-bottom: 0.25rem;
+  color: $text-main;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, $text-main 0%, $accent-primary 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   
   &:hover {
     text-decoration: none;
-    color: $accent-color;
+    -webkit-text-fill-color: rgba($text-main, 0.9); // Reveal slightly on hover
   }
 }
 
 .site-description {
   margin: 0;
-  font-size: 1rem;
-  color: lighten($text-color, 10%);
+  font-size: 1.05rem;
+  color: $text-muted;
   max-width: 500px;
-  line-height: 1.5;
+  font-weight: 300;
 }
 
 .site-nav {
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
+  background: $glass-bg;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  border: 1px solid $glass-border;
   
    a {
-      font-weight: 600;
-      color: $text-color;
-      font-size: 1rem;
-      padding: 0.5rem 0;
-      border-bottom: 2px solid transparent;
+      font-family: $font-sans;
+      font-weight: 500;
+      color: $text-main;
+      font-size: 0.95rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
       
       &:hover {
-        color: $accent-color;
+        color: $accent-secondary;
+        text-shadow: 0 0 10px rgba($accent-secondary, 0.5);
         text-decoration: none;
-        border-bottom-color: $accent-color;
       }
    }
 }
 
 // --- Content & Typography ---
 h1, h2, h3, h4, h5, h6 {
-  color: $heading-color;
+  font-family: $font-serif;
+  color: $text-main;
   font-weight: 700;
-  letter-spacing: -0.025em;
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
 }
 
-h1 { font-size: 2.25rem; }
-h2 { font-size: 1.8rem; }
-h3 { font-size: 1.5rem; }
+h1 { 
+    font-size: 3rem; 
+    position: relative;
+    display: inline-block;
+    
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 60%;
+        height: 2px;
+        background: linear-gradient(to right, $accent-primary, transparent);
+    }
+}
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; color: $accent-tertiary; }
 
 p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
+  color: lighten($text-muted, 10%);
 }
 
 // --- Cards (Post List) ---
-// Note: We need to target the structure in index.html. 
-// Ideally we remove inline styles there, but we can stick !important if strictly needed or just target strongly.
 .home h1 {
     text-align: center;
-    margin-bottom: 3rem;
-    position: relative;
+    margin-bottom: 4rem;
+    display: block; // Reset inline-block from generic h1
     
-    &:after {
-        content: "";
-        display: block;
-        width: 60px;
-        height: 4px;
-        background: $accent-color;
-        margin: 1rem auto 0;
-        border-radius: 2px;
+    &::after {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        background: linear-gradient(to right, transparent, $accent-secondary, transparent);
     }
 }
 
 .post-list {
   display: grid;
-  gap: 2rem;
-  list-style: none !important; // Override inline if missed
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  list-style: none !important;
   padding: 0 !important;
   
   li {
-    background: $card-bg;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    transition: all 0.2s ease;
-    border: 1px solid $border-color;
-    margin-bottom: 0 !important; // Grid handles gap
+    background: linear-gradient(180deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.4) 100%);
+    backdrop-filter: blur(10px);
+    padding: 2.5rem;
+    border-radius: 16px;
+    border: 1px solid $glass-border;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0; height: 1px;
+        background: linear-gradient(90deg, transparent, $glass-shine, transparent);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
     
     &:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
-        border-color: darken($border-color, 5%);
+        transform: translateY(-8px) scale(1.02);
+        background: linear-gradient(180deg, rgba(30, 41, 59, 0.9) 0%, rgba(15, 23, 42, 0.6) 100%);
+        border-color: rgba($accent-primary, 0.3);
+        box-shadow: 0 20px 40px -10px rgba(0,0,0,0.5);
+        
+        &::before { opacity: 1; }
+        
+        .post-link {
+            color: $accent-secondary !important;
+        }
     }
   }
 }
 
 .post-meta {
   display: inline-block;
-  font-size: 0.875rem;
-  color: $accent-color;
+  font-family: $font-sans;
+  font-size: 0.75rem;
+  color: $accent-tertiary;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 0.5rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.75rem;
+  background: rgba($accent-tertiary, 0.1);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
 }
 
 .post-link {
   display: block;
-  font-size: 1.5rem;
+  font-family: $font-serif;
+  font-size: 1.75rem;
   font-weight: 700;
-  color: $heading-color !important; // Override inline
-  margin: 0.5rem 0 1rem;
-  line-height: 1.3;
+  color: $text-main !important;
+  margin: 0.75rem 0 1rem;
+  line-height: 1.2;
   text-decoration: none !important;
-  
-  &:hover {
-    color: $accent-color !important;
-  }
+  transition: color 0.3s ease;
 }
 
-// --- Syntax Highlighting ---
+// --- Highlighting ---
 .highlight {
-  background: #f8fafc;
+  background: rgba(0, 0, 0, 0.3) !important;
   padding: 1.5rem;
-  border-radius: 8px;
+  border-radius: 12px;
+  border: 1px solid $glass-border;
   overflow-x: auto;
-  font-size: 0.9rem;
-  line-height: 1.6;
-  border: 1px solid $border-color;
-  margin: 2rem 0;
+  font-size: 0.85rem;
+  margin: 2.5rem 0;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+  
+  pre { margin: 0; }
 }
 
 // --- Footer ---
 .site-footer {
-  background: white;
-  border-top: 1px solid $border-color;
-  margin-top: 5rem;
-  padding: 3rem 0;
+  border-top: 1px solid $glass-border;
+  margin-top: 6rem;
+  padding: 4rem 0;
   text-align: center;
-  color: lighten($text-color, 20%);
+  color: $text-muted;
+  background: rgba(15, 23, 42, 0.8);
   font-size: 0.9rem;
-  
-  hr { display: none; } // Clean up
   
   .footer-content {
       flex-direction: column;
       align-items: center;
-      gap: 1rem;
+      gap: 1.5rem;
   }
 }
 
 .social-links {
     a {
-      margin: 0 10px;
-      color: $text-color;
-      font-size: 1.1rem;
-      opacity: 0.7;
+      margin: 0 15px;
+      color: $text-muted;
+      font-size: 1.25rem;
+      opacity: 0.6;
+      transition: all 0.3s ease;
+      
       &:hover {
         opacity: 1;
-        color: $accent-color;
+        color: $accent-secondary;
+        transform: translateY(-3px);
       }
     }
 }
