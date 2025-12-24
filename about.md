@@ -18,7 +18,7 @@ title: About Shanief
         My journey has taken me from the trenches of incident response to driving security engineering efforts at well-known government agencies and technology companies, including US Postal Service Office of Inspector General, Federal Bureau of Investigation, Google, Cox Communications, IBM, Slack, Drobox, and Okta. I don't just theorize about "secure by design" — I have reverse-engineered the threats that dismantle those designs. 
       </p>
       <p>
-        Today, my focus is twofold: <strong>Technical Excellence</strong> and <strong>Human Capital</strong>. I construct high-assurance cloud infrastructures that can withstand modern attacks, and I mentor the next generation of engineers to do the same... because security is not just a technical problem - it is a discipline of continuous learning, strategy, and adaptation.
+        Today, my focus is twofold: <strong>Technical Excellence</strong> and <strong>People Leadership</strong>. I construct high-assurance cloud infrastructures that can withstand modern attacks, and I mentor the next generation of engineers to do the same... because security is not just a technical problem - it is a discipline of continuous learning, strategy, and adaptation.
       </p>
     </div>
   </section>
