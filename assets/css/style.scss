@@ -128,6 +128,7 @@ header.site-header {
   letter-spacing: -0.02em;
   background: linear-gradient(135deg, $text-main 0%, $accent-primary 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   
   &:hover {
