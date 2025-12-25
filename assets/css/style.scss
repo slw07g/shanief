@@ -224,6 +224,9 @@ a {
     border-radius: 8px;
     font-size: 0.9rem;
     font-weight: 600;
+    display: flex; /* Centering icons */
+    justify-content: center;
+    align-items: center;
     
     &:hover {
       background: white;
@@ -340,6 +343,22 @@ article.post {
   margin-top: auto;
   padding-top: 3rem;
   color: var(--text-muted);
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    
+    a {
+      color: var(--text-muted);
+      transition: color 0.3s ease;
+      
+      &:hover {
+        color: var(--accent-primary);
+      }
+    }
+  }
 }
 
 // --- Responsive ---
