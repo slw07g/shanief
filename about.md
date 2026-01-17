@@ -15,7 +15,7 @@ title: About Shanief
         Too often, the security industry is divided into silos: Red Teams who break things and Blue Teams who fix them. My career has been dedicated to shattering that barrier. With a deep background in <strong>Explotation, Malware Analysis, and Digital Forensics</strong>, I build security strategies that are grounded in the adversarial reality.
       </p>
       <p>
-        My journey has taken me from the trenches of incident response to driving security engineering efforts at well-known government agencies and technology companies, including US Postal Service Office of Inspector General, Federal Bureau of Investigation, Google, Cox Communications, IBM, Slack, Drobox, and Okta. I don't just theorize about "secure by design" — I have reverse-engineered the threats that dismantle those designs. 
+        My journey has taken me from the trenches of incident response to driving security engineering efforts at well-known government agencies and technology companies, including US Postal Service Office of Inspector General, Federal Bureau of Investigation, Google, Cox Communications, IBM, Slack, Dropbox, and Okta. I don't just theorize about "secure by design" — I have reverse-engineered the threats that dismantle those designs. 
       </p>
       <p>
         Today, my focus is twofold: <strong>Technical Excellence</strong> and <strong>People Leadership</strong>. I construct high-assurance cloud infrastructures that can withstand modern attacks, and I mentor the next generation of engineers to do the same... because security is not just a technical problem - it is a discipline of continuous learning, strategy, and adaptation.
@@ -24,6 +24,83 @@ title: About Shanief
   </section>
 
   <hr class="glass-divider">
+
+  <section class="experience-section">
+    <h2>History</h2>
+    <p class="section-subtitle">A timeline of impact across the industry.</p>
+    <ul class="experience-list">
+      <li class="experience-item">
+        <div class="job-info">
+          <span class="company">Headspace Health</span>
+          <span class="role">Head of Security Engineering & Cloud Ops</span>
+        </div>
+        <span class="dates">2024 - Present</span>
+      </li>
+      <li class="experience-item">
+        <div class="job-info">
+          <span class="company">Meta</span>
+          <span class="role">Security Engineer, Surface Coverage</span>
+        </div>
+        <span class="dates">2022 - 2024</span>
+      </li>
+      <li class="experience-item">
+        <div class="job-info">
+          <span class="company">Okta</span>
+          <span class="role">Principal Security Engineer, Detection & Response</span>
+        </div>
+        <span class="dates">2022</span>
+      </li>
+      <li class="experience-item">
+        <div class="job-info">
+          <span class="company">Dropbox</span>
+          <span class="role">Senior Security Engineer, Detection & Response</span>
+        </div>
+        <span class="dates">2021 - 2022</span>
+      </li>
+      <li class="experience-item">
+        <div class="job-info">
+          <span class="company">Slack</span>
+          <span class="role">Senior Software Engineer, Security</span>
+        </div>
+        <span class="dates">2020 - 2021</span>
+      </li>
+      <li class="experience-item">
+        <div class="job-info">
+          <span class="company">IBM</span>
+          <span class="role">Senior Cyber Threat Hunter</span>
+        </div>
+        <span class="dates">2019 - 2020</span>
+      </li>
+      <li class="experience-item">
+        <div class="job-info">
+          <span class="company">Cox Communications</span>
+          <span class="role">Incident Response Lead</span>
+        </div>
+        <span class="dates">2017 - 2018</span>
+      </li>
+      <li class="experience-item">
+        <div class="job-info">
+          <span class="company">Google</span>
+          <span class="role">Security Engineer, Security Surveillance Team</span>
+        </div>
+        <span class="dates">2016 - 2017</span>
+      </li>
+      <li class="experience-item">
+        <div class="job-info">
+          <span class="company">Federal Bureau of Investigation</span>
+          <span class="role">Computer Scientist</span>
+        </div>
+        <span class="dates">2013 - 2016</span>
+      </li>
+      <li class="experience-item">
+        <div class="job-info">
+          <span class="company">US Postal Service OIG</span>
+          <span class="role">Student Co-Op, Office of Audit</span>
+        </div>
+        <span class="dates">2010 - 2012</span>
+      </li>
+    </ul>
+  </section>
 
   <section class="certs-section">
     <h2>Arsenal & Qualifications</h2>
@@ -115,12 +192,71 @@ title: About Shanief
     background: linear-gradient(90deg, transparent, rgba(129, 140, 248, 0.3), transparent);
     margin: 4rem 0;
   }
+  
+  /* Experience Stylings */
+  .experience-section {
+    margin-bottom: 4rem;
+  }
+  
+  .experience-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+    max-width: 800px;
+  }
+  
+  .experience-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align to top in case of wrapping */
+    padding: 1.25rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    transition: all 0.2s ease;
+  }
+  
+  .experience-item:hover {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background: rgba(255,255,255,0.5);
+    border-radius: 8px;
+  }
+  
+  .job-info {
+    display: flex;
+    flex-direction: column;
+  }
 
-  /* Certifications Grid */
+  .experience-item .company {
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--text-main);
+    line-height: 1.2;
+  }
+  
+  .experience-item .role {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-top: 0.2rem;
+    font-weight: 500;
+  }
+  
+  .experience-item .dates {
+    font-family: var(--font-mono, monospace);
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    background: rgba(0,0,0,0.03);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    white-space: nowrap;
+    margin-left: 1rem;
+    margin-top: 0.2rem; /* Align visually with company name */
+  }
+
+  /* Certifications Grid - Compact */
   .certs-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.25rem;
     margin-top: 2.5rem;
   }
 
@@ -129,8 +265,8 @@ title: About Shanief
     background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.6);
-    padding: 2rem;
-    border-radius: 20px;
+    padding: 1.5rem;
+    border-radius: 16px;
     transition: all 0.3s ease;
     overflow: hidden;
     /* Link styles */
@@ -140,9 +276,9 @@ title: About Shanief
   }
 
   .cert-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
     background: white;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
   }
   
   /* Indicators for Red/Blue team */
@@ -160,7 +296,7 @@ title: About Shanief
 
   .cert-type {
     display: block;
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     font-weight: 800;
     letter-spacing: 2px;
     margin-bottom: 0.5rem;
@@ -173,14 +309,15 @@ title: About Shanief
     display: block;
     font-family: var(--font-display);
     font-weight: 700;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: var(--text-main);
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.2rem;
   }
 
   .cert-desc {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     color: var(--text-muted);
+    line-height: 1.4;
   }
   
   .section-subtitle {
