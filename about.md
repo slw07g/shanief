@@ -255,9 +255,10 @@ title: About Shanief
   /* Certifications Grid - Compact */
   .certs-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 1rem;
-    margin-top: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+    align-items: start;
   }
 
   .cert-card {
@@ -265,8 +266,8 @@ title: About Shanief
     background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.6);
-    padding: 1rem 1.25rem;
-    border-radius: 12px;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
     transition: all 0.3s ease;
     overflow: hidden;
     /* Link styles */
@@ -296,10 +297,10 @@ title: About Shanief
 
   .cert-type {
     display: block;
-    font-size: 0.65rem;
+    font-size: 0.6rem;
     font-weight: 800;
-    letter-spacing: 2px;
-    margin-bottom: 0.25rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 0.1rem;
   }
   
   .red-team .cert-type { color: #f43f5e; }
@@ -309,15 +310,16 @@ title: About Shanief
     display: block;
     font-family: var(--font-display);
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     color: var(--text-main);
-    margin-bottom: 0.15rem;
+    margin-bottom: 0.1rem;
+    line-height: 1.1;
   }
 
   .cert-desc {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     color: var(--text-muted);
-    line-height: 1.4;
+    line-height: 1.3;
   }
   
   .section-subtitle {
