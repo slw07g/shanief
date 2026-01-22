@@ -31,17 +31,17 @@ title: About Shanief
     <ul class="experience-list">
       <li class="experience-item">
         <div class="job-info">
-          <span class="company">Headspace Health</span>
+          <span class="company">Headspace</span>
           <span class="role">Head of Security Engineering & Cloud Ops</span>
         </div>
-        <span class="dates">2024 - Present</span>
+        <span class="dates">2025 - Present</span>
       </li>
       <li class="experience-item">
         <div class="job-info">
           <span class="company">Meta</span>
           <span class="role">Security Engineer, Surface Coverage</span>
         </div>
-        <span class="dates">2022 - 2024</span>
+        <span class="dates">2023 - 2025</span>
       </li>
       <li class="experience-item">
         <div class="job-info">
@@ -97,7 +97,7 @@ title: About Shanief
           <span class="company">US Postal Service OIG</span>
           <span class="role">Student Co-Op, Office of Audit</span>
         </div>
-        <span class="dates">2010 - 2012</span>
+        <span class="dates">2012</span>
       </li>
     </ul>
   </section>
