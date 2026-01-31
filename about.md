@@ -88,7 +88,7 @@ title: About Shanief
       <li class="experience-item">
         <div class="job-info">
           <span class="company">Federal Bureau of Investigation</span>
-          <span class="role">Computer Scientist</span>
+          <span class="role">Computer Scientist - Field Ops</span>
         </div>
         <span class="dates">2013 - 2016</span>
       </li>
