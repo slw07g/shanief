@@ -13,7 +13,7 @@ Throughout my career, I have noticed that organizations struggling with incident
 
 I want to take the time to break this down. While closely related and highly dependent on each other, incident response and incident management serve fundamentally different purposes during a crisis.
 
-![The Chaos of an Unmanaged Incident](/assets/images/incident-dystopia.png)
+[![The Chaos of an Unmanaged Incident](/assets/images/incident-dystopia.png)](/assets/images/incident-dystopia.png){:target="_blank"}
 
 ## The Crucial Distinction
 
@@ -41,7 +41,7 @@ You can have brilliant incident responders, but without effective incident manag
 
 To bridge the gap between technical response and strategic management, high-performing organizations adopt a formalized Incident Command Structure. Borrowed heavily from emergency services and firefighting (the Incident Command System or ICS), this model assigns clear, non-overlapping roles during a major incident.
 
-![Incident Command Structure](/assets/images/incident-utopia.png)
+[![Incident Command Structure](/assets/images/incident-utopia.png)](/assets/images/incident-utopia.png){:target="_blank"}
 
 The core of this structure relies on four distinct roles:
 

@@ -383,6 +383,21 @@ article.post {
     font-size: 1.1rem;
     line-height: 1.8;
     color: #475569;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      display: block;
+      margin: 2.5rem auto;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: scale(1.02);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      }
+    }
   }
 
   /* Related Posts Styles */
