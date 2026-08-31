@@ -32,9 +32,16 @@ title: About Shanief
       <li class="experience-item">
         <div class="job-info">
           <span class="company">Headspace</span>
-          <span class="role">Head of Security Engineering & Cloud Ops</span>
+          <span class="role">Interim CISO</span>
         </div>
         <span class="dates">2025 - Present</span>
+      </li>
+      <li class="experience-item">
+        <div class="job-info">
+          <span class="company">Cyberhaven</span>
+          <span class="role">Technical Advisory Board</span>
+        </div>
+        <span class="dates">Oct 2025 - Present</span>
       </li>
       <li class="experience-item">
         <div class="job-info">
@@ -98,6 +105,13 @@ title: About Shanief
           <span class="role">Student Co-Op, Office of Audit</span>
         </div>
         <span class="dates">2012</span>
+      </li>
+      <li class="experience-item">
+        <div class="job-info">
+          <span class="company">Lexmark</span>
+          <span class="role">Software Engineer Intern, Embedded Security</span>
+        </div>
+        <span class="dates">May 2012 - August 2012</span>
       </li>
     </ul>
   </section>
