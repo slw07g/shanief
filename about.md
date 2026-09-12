@@ -32,7 +32,7 @@ title: About Shanief
       <li class="experience-item">
         <div class="job-info">
           <span class="company">Headspace</span>
-          <span class="role">Interim CISO</span>
+          <span class="role">Interim CISO & Head of Security Engineering and Cloud Infrastructure</span>
         </div>
         <span class="dates">2025 - Present</span>
       </li>
