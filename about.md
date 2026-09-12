@@ -9,7 +9,7 @@ redirect_from:
   
   <section class="bio-section">
     <p class="lead-text">
-      I am a CISO who refuses to choose between <strong>offensive precision</strong> and <strong>defensive resilience</strong>.
+      CISO / Cybersecurity Executive Leader.
     </p>
     
     <div class="bio-content">
@@ -40,16 +40,16 @@ redirect_from:
       <li class="experience-item">
         <div class="job-info">
           <span class="company">Headspace</span>
-          <span class="role">Interim CISO & Head of Security Engineering and Cloud Infrastructure</span>
+          <span class="role">Interim CISO / Head of Security Engineering & Cloud Ops</span>
         </div>
-        <span class="dates">2025 - Present</span>
+        <span class="dates">2025 to Present</span>
       </li>
       <li class="experience-item">
         <div class="job-info">
           <span class="company">Cyberhaven</span>
-          <span class="role">Technical Advisory Board</span>
+          <span class="role">Technical Advisory Board Member</span>
         </div>
-        <span class="dates">Oct 2025 - Present</span>
+        <span class="dates">2025 - Present</span>
       </li>
       <li class="experience-item">
         <div class="job-info">

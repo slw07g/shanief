@@ -82,7 +82,7 @@ AI agents connect to MCP servers, plugins, external APIs, and prompt templates, 
 
 **Memory and Context Poisoning**
 
-Agentic systems with persistent memory introduce a threat that traditional security models don't address. An attacker who poisons an agent's long-term memory or knowledge base doesn't just affect one interaction — they affect every future interaction that draws on that memory. Cross-tenant context leakage can expose one customer's data to another. And because memory poisoning is silent, it's typically discovered long after the damage is done.
+Agentic systems with persistent memory introduce a threat that traditional security models don't address. An attacker who poisons an agent's long-term memory or knowledge base doesn't affect a single interaction; every future interaction that draws on that memory is compromised too. Cross-tenant context leakage can expose one customer's data to another. And because memory poisoning is silent, it's typically discovered long after the damage is done.
 
 **Cascading Failures Across Agent Networks**
 
@@ -118,13 +118,13 @@ Security shouldn't be the last team to know when an AI tool isn't delivering val
 
 Before approving any AI tool for enterprise use, put it through four questions. I call this the CAVE framework.
 
-**Control** — What can this tool actually do? What's the blast radius if it's compromised or hijacked? Does it operate on least-privilege, task-scoped credentials, or does it request broad access and hold it indefinitely?
+**Control:** What can this tool actually do? What's the blast radius if it's compromised or hijacked? Does it operate on least-privilege, task-scoped credentials, or does it request broad access and hold it indefinitely?
 
-**Accountability** — Can every action this tool takes be traced to a human decision that authorized it? Is there an audit log that persists beyond the session? Can you reconstruct what happened after an incident?
+**Accountability:** Can every action this tool takes be traced to a human decision that authorized it? Is there an audit log that persists beyond the session? Can you reconstruct what happened after an incident?
 
-**Visibility** — Is this tool's activity monitored end-to-end across prompts, tool calls, and outputs? Do you have behavioral baselines that would surface anomalous activity?
+**Visibility:** Is this tool's activity monitored end-to-end across prompts, tool calls, and outputs? Do you have behavioral baselines that would surface anomalous activity?
 
-**Exposure** — What data does this tool touch? What SaaS integrations does it connect to? If a personal account is used instead of a corporate identity, where does your data go and who controls it after the employee leaves?
+**Exposure:** What data does this tool touch? What SaaS integrations does it connect to? If a personal account is used instead of a corporate identity, where does your data go and who controls it after the employee leaves?
 
 A tool that can't answer these four questions cleanly isn't ready to touch your environment.
 
@@ -134,7 +134,7 @@ A tool that can't answer these four questions cleanly isn't ready to touch your 
 
 There's another side to this equation that security teams consistently undervalue: AI makes defenders faster too.
 
-Threat detection, alert triage, malware analysis, vulnerability prioritization, log correlation at scale — these are functions where AI-assisted tooling can compress hours of analyst work into minutes, when deployed with the same rigor we demand of any other security capability.
+Threat detection, alert triage, malware analysis, vulnerability prioritization, and log correlation at scale are functions where AI-assisted tooling can compress hours of analyst work into minutes, when deployed with the same rigor we demand of any other security capability.
 
 Adversaries are already using it. Security teams that don't engage with AI don't stay neutral. They fall behind. The question isn't whether to use AI in your security program. It's whether you'll build the operational discipline to use it well.
 
