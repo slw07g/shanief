@@ -7,18 +7,24 @@ title: About Shanief
   
   <section class="bio-section">
     <p class="lead-text">
-      I am a security practitioner who refuses to choose between <strong>offensive precision</strong> and <strong>defensive resilience</strong>.
+      I am a CISO who refuses to choose between <strong>offensive precision</strong> and <strong>defensive resilience</strong>.
     </p>
     
     <div class="bio-content">
       <p>
-        Too often, the security industry is divided into silos: Red Teams who break things and Blue Teams who fix them. My career has been dedicated to shattering that barrier. With a deep background in <strong>Explotation, Malware Analysis, and Digital Forensics</strong>, I build security strategies that are grounded in the adversarial reality.
+        Most CISOs come from risk and compliance. I came from <strong>exploitation, malware reverse engineering, and digital forensics</strong>: reverse engineering a rootkit that had evaded detection for years, with no mentor and no AI. That adversarial ground truth still drives how I build security programs.
       </p>
       <p>
-        My journey has taken me from the trenches of incident response to driving security engineering efforts at well-known government agencies and technology companies, including US Postal Service Office of Inspector General, Federal Bureau of Investigation, Google, Cox Communications, IBM, Slack, Dropbox, and Okta. I don't just theorize about "secure by design" — I have reverse-engineered the threats that dismantle those designs. 
+        I'm Interim CISO at Headspace, leading <strong>Security Engineering, Cloud Operations, and DevOps</strong> alongside enterprise security strategy in a HIPAA-regulated environment. I rebuilt the security engineering program from the ground up: overhauling detection and alerting, operationalizing tooling across DLP, AppSec, bug bounty, and cloud security, and revamping hiring around signals that actually predict performance. That scope, security, cloud infrastructure, and DevOps under one leader, is deliberate: I run the function, not just the security slice of it.
       </p>
       <p>
-        Today, my focus is twofold: <strong>Technical Excellence</strong> and <strong>People Leadership</strong>. I construct high-assurance cloud infrastructures that can withstand modern attacks, and I mentor the next generation of engineers to do the same... because security is not just a technical problem - it is a discipline of continuous learning, strategy, and adaptation.
+        Across my career, I've worked the full arc myself: computer scientist, threat hunter, software engineer, detection & response engineer, and incident commander, tested coordinating engineering, legal, communications, HR, and executive leadership through high-stakes incidents. Now I build generalists who work across specialties, not specialists locked into one.
+      </p>
+      <p>
+        I sit on Cyberhaven's Technical Advisory Board. I hold <strong>GXPN, OSCP, GREM, and GCFA</strong> among other certifications; the offense and defense work those map to is the same work behind the strategy above, not a separate track.
+      </p>
+      <p>
+        Before Headspace: Okta, Meta, Dropbox, Slack, IBM, Google, and the FBI.
       </p>
     </div>
   </section>
