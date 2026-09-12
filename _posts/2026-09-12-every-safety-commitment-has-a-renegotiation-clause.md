@@ -120,8 +120,7 @@ Slow that down.
 
 - [BBC: AI safety timeline](https://www.bbc.com/news/articles/c14dpgm0rg4o)
 - [Congressional Research Service, IN12669](https://www.congress.gov/crs-product/IN12669)
-- [Tech Policy Press: A Timeline of the Anthropic-Pentagon Dispute](https://www.techpolicy.press/a-timeline-of-the-anthropic-pentagon-dispute/)
-- [Cloud Security Alliance: DoD AI Guardrail Mandates & Vendor Governance](https://labs.cloudsecurityalliance.org/research/csa-research-note-dod-ai-guardrail-mandates-vendor-governanc/)
+- [TIME: Exclusive — Anthropic Drops Flagship Safety Pledge](https://time.com/7380854/exclusive-anthropic-drops-flagship-safety-pledge/)
 - [OpenAI: Hugging Face Incident and the Road Ahead](https://openai.com/index/hugging-face-incident-and-the-road-ahead/)
 - [Hugging Face: Agent Intrusion Technical Timeline](https://huggingface.co/blog/agent-intrusion-technical-timeline)
 - [Dark Reading: Hundreds of OpenAI Agents Invaded Hugging Face Servers](https://www.darkreading.com/cyberattacks-data-breaches/hundreds-openai-agents-invaded-hugging-face-servers)
