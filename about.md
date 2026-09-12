@@ -1,6 +1,8 @@
 ---
 layout: page
 title: About Shanief
+redirect_from:
+  - /Shanief_Webb/Shanief.html
 ---
 
 <div class="about-container">
