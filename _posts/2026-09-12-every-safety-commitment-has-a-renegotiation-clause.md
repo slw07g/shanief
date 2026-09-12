@@ -28,11 +28,15 @@ Nothing illegal happened. A governance structure designed to constrain commercia
 
 ## A Pledge Gave Way
 
-The Department of Defense pushed AI vendors toward contracts permitting use for all lawful purposes with no usage-policy constraints attached. The phrase sounds procedural. It functions as a deletion, because US law permits domestic surveillance under some conditions, so accepting the language removes a vendor's stated red lines without anyone formally crossing one.
+One of these companies spent years pointing at a single promise as proof it would hold the line against market pressure. It would not train a model past a certain capability threshold unless it could establish in advance that its safety measures were adequate. That commitment was the load-bearing pillar of its scaling policy and a large part of its public identity.
 
-One vendor refused, held its published limits on autonomous weapons and domestic mass surveillance, and lost its federal business over it. Another accepted the terms and later revised them under pressure, with a senior leader resigning on the way out over guardrails that were never defined before the deal was announced.
+It dropped the commitment in February and said so on the record. The stated reasoning was that unilateral restraint stops making sense when competitors keep moving, and that halting its own training would help nobody.
 
-Two answers. One conclusion. A published safety policy is a negotiating position held at the pleasure of the largest customer in the room.
+The replacement policy adds transparency commitments, published safety roadmaps, and periodic risk reports. An outside evaluator who reviewed an early draft called the change understandable, then warned that removing the tripwire invites a slow ramp in danger with no single moment loud enough to trigger a response.
+
+Read the stated reason again. The pledge held right up until holding it carried a competitive cost. That was the entire test, and everyone now has the answer.
+
+A commitment that lasts until it costs something was a preference.
 
 ## A Sandbox Gave Way
 
@@ -74,19 +78,25 @@ Regulate it. Just don't build your program on the assumption that the regulation
 
 ## Back to the Slowdown
 
-The request from those two CEOs concerns the rate at which capability improves. There's a version of that request that belongs to everyone else, and it has nothing to do with training runs.
+All three of those failures happened upstream of you. You didn't write the corporate charter, sign the government contract, or run the evaluation that got loose. You inherit the results regardless.
 
-Slow the rate at which you hand over access.
+Integration is how you inherit them. Every system you connect, every dataset you expose, every workflow you route through a model deepens your dependence on commitments held by other people, under pressures you can't see and don't influence. That dependence is the exposure. It grows every time you integrate, and it grows quietly, because integration gets counted as progress.
 
-Most organizations are still experimenting with this technology. That's reasonable. Nobody has a settled answer on where it pays for itself, and the honest ones say so. What's harder to defend is expanding access while the value question stays open. Exposure lands immediately. Value arrives late, if it arrives.
+So the request from those two CEOs has a version that belongs to everyone else, and it has nothing to do with training runs.
 
-So be deliberate about the trade. Three questions, asked before the next expansion of scope:
+Integrate only where the value outruns the exposure. Slow down everywhere else.
 
-**Is this a hard problem or a tedious one?** Both are legitimate uses. They carry different risk. A tedious task with bounded input and a reviewable output is a clean trade. A hard problem handed to an autonomous agent holding production credentials is a different transaction, and it deserves to be priced like one.
+Most organizations are still experimenting with this technology. That's reasonable. Nobody has a settled answer on where it pays for itself, and the honest ones say so. What's harder to defend is deepening the integration while the value question stays open. Exposure lands immediately. Value arrives late, if it arrives.
 
-**What work stopped happening?** If nobody can name the hours this replaced, no value was created. Access was granted anyway. That's a cost with no offsetting entry.
+So be deliberate about the trade. Four questions, asked before the next expansion of scope:
 
-**How much did we hand over to find out?** Experiments are supposed to be scoped. Read-only beats read-write. One system beats ten. A revocable credential beats a standing one. If the pilot has the same access as the production rollout, it was never a pilot.
+**If we turned it off tomorrow, what gets worse?** The strongest value test available, because it measures dependence instead of enthusiasm. If nothing gets worse, you're carrying exposure for no return and the integration should come out. If something critical breaks, you've just discovered a production dependency on a commitment held by someone else.
+
+**Who checks the output, and how long does that take?** Verification cost is the line item missing from most AI business cases. If a human reviews every result, the hours saved may round to zero while the exposure stays at full price. Measure the review time before you approve the expansion.
+
+**What are we granting, and can we take it back?** Credentials revoke. Data you've already handed over does not. That distinction decides whether the pilot runs read-only, whether it runs on synthetic data, and whether deletion terms go into the contract before signature.
+
+**Is this a hard problem or a tedious one?** Both are legitimate uses carrying different risk. A tedious task with bounded input and a reviewable output is a clean trade. A hard problem handed to an autonomous agent holding production credentials is a different transaction, and the controls should reflect that.
 
 None of that requires anyone to slow anything down on your behalf.
 
@@ -96,7 +106,9 @@ The pacing proposal is a real structural change, and independent oversight insid
 
 Sit with what prompted it, though. The people closest to these systems just told the public they've lost some visibility into how their own models behave under pressure. They said it about controlled environments, staffed by researchers, running deliberate evaluations. Your environment has none of that.
 
-Corporate structure. Contract language. Evaluation guardrails. Three unrelated commitments, each one standing between capability and deployment, each one renegotiated the moment something large enough leaned on it.
+Notice the shape of it. A unilateral pledge got dropped in February because no coordination existed to make it worth keeping. In September, coordination is the ask.
+
+Corporate structure. Scaling policy. Evaluation guardrails. Three unrelated commitments, each one standing between capability and deployment, each one renegotiated the moment holding it cost something.
 
 The one commitment nobody can renegotiate for you is how much of your environment you hand over, and how quickly.
 
