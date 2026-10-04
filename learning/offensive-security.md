@@ -4,7 +4,7 @@ title: "Offensive Security 101"
 permalink: /learning/offensive-security/
 ---
 
-[← Back to Security Operations 101](/learning/security-operations/)
+[← Back to Learning](/learning/)
 
 Everything in triage and incident response exists to catch and stop what offensive security teaches you to do. Understanding the attacker's methodology is what makes both of those disciplines sharper.
 

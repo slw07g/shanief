@@ -849,16 +849,20 @@ div.highlight {
     line-height: 1.7;
   }
 
-  .track-modules {
+  .track-topics {
     padding-left: 1.25rem;
-    line-height: 2;
+    line-height: 1.8;
+    color: #475569;
+  }
 
-    a {
-      color: #4f46e5;
-      font-weight: 600;
+  &.defense {
+    border-left: 4px solid #3b82f6;
+    .track-level { color: #3b82f6; }
+  }
 
-      &:hover { color: var(--accent-secondary); }
-    }
+  &.offense {
+    border-left: 4px solid #f43f5e;
+    .track-level { color: #f43f5e; }
   }
 
   .track-cta {

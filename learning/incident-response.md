@@ -4,7 +4,7 @@ title: "Security Incident Response 101"
 permalink: /learning/incident-response/
 ---
 
-[← Back to Security Operations 101](/learning/security-operations/)
+[← Back to Learning](/learning/)
 
 Triage tells you something happened. Incident response is everything that happens once you have confirmed it did.
 

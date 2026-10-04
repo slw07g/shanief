@@ -2,6 +2,8 @@
 layout: page
 title: Learning
 permalink: /learning/
+redirect_from:
+  - /learning/security-operations/
 description: >-
   Free, practical security training written the way the work actually happens. Built for everyone, from people just getting curious about security to working practitioners and leaders.
 ---
@@ -53,21 +55,45 @@ description: >-
 
   <section class="tracks-section">
     <h2>Tracks</h2>
-    <p class="section-subtitle">Each track is a set of modules on one discipline. Pick the one that matches where you are.</p>
+    <p class="section-subtitle">Each track stands on its own. If you are new to the field, take them in order. If you already have ground under you, jump straight to the one you need.</p>
 
-    <div class="track-card">
-      <span class="track-level">Foundational</span>
-      <a class="track-title" href="{{ '/learning/security-operations/' | relative_url }}">Security Operations 101</a>
-      <p class="track-desc">The core skill set of a security operations career: working alerts, running incidents, and understanding the attacker on the other side.</p>
-      <ol class="track-modules">
-        <li><a href="{{ '/learning/investigations-triage/' | relative_url }}">Investigations &amp; Triage</a></li>
-        <li><a href="{{ '/learning/incident-response/' | relative_url }}">Security Incident Response</a></li>
-        <li><a href="{{ '/learning/offensive-security/' | relative_url }}">Offensive Security</a></li>
-      </ol>
-      <a class="track-cta" href="{{ '/learning/security-operations/' | relative_url }}">Start the track &rarr;</a>
+    <div class="track-card defense">
+      <span class="track-level">Defense</span>
+      <a class="track-title" href="{{ '/learning/investigations-triage/' | relative_url }}">Investigations &amp; Triage</a>
+      <p class="track-desc">How alerts get worked: from a claim that something bad happened to a decision backed by evidence.</p>
+      <ul class="track-topics">
+        <li>Playbooks and the questions to ask before you touch a single log</li>
+        <li>Where the evidence lives and how to land on a disposition</li>
+        <li>Walkthroughs: user-reported phishing, EDR malware detection, Okta suspicious activity</li>
+      </ul>
+      <a class="track-cta" href="{{ '/learning/investigations-triage/' | relative_url }}">Start the track &rarr;</a>
     </div>
 
-    <p class="tracks-note">More tracks are on the way.</p>
+    <div class="track-card defense">
+      <span class="track-level">Defense</span>
+      <a class="track-title" href="{{ '/learning/incident-response/' | relative_url }}">Security Incident Response</a>
+      <p class="track-desc">What happens once triage confirms impact, and how to run it so the response holds up under pressure.</p>
+      <ul class="track-topics">
+        <li>Incident management vs incident response, and why they are different roles</li>
+        <li>The lifecycle from declaration to lessons learned, and the incident command structure</li>
+        <li>Executive summaries and postmortems, with templates</li>
+      </ul>
+      <a class="track-cta" href="{{ '/learning/incident-response/' | relative_url }}">Start the track &rarr;</a>
+    </div>
+
+    <div class="track-card offense">
+      <span class="track-level">Offense</span>
+      <a class="track-title" href="{{ '/learning/offensive-security/' | relative_url }}">Offensive Security</a>
+      <p class="track-desc">The attacker's side of the same problem. Understanding it is what makes triage and incident response sharper.</p>
+      <ul class="track-topics">
+        <li>Attack methodology from reconnaissance to root</li>
+        <li>Where to practice: HackTheBox and TryHackMe</li>
+        <li>Going further: automating your attack chains and publishing writeups</li>
+      </ul>
+      <a class="track-cta" href="{{ '/learning/offensive-security/' | relative_url }}">Start the track &rarr;</a>
+    </div>
+
+    <p class="tracks-note"><strong>How to use this material:</strong> read the track, then apply it. Triage a real alert using the disposition framework. Run a postmortem on a real incident using the templates. Root a box and write up the methodology instead of just moving to the next one. What separates people is whether they used it. More tracks are on the way.</p>
   </section>
 
 </div>

@@ -1,6 +1,6 @@
 # Executive Summary: Security Incident Report
 
-*Template author: [Shanief Webb](https://shanief.com/about). Part of the [Security Incident Response 101](https://shanief.com/learning/incident-response/) module.*
+*Template author: [Shanief Webb](https://shanief.com/about). Part of the [Security Incident Response](https://shanief.com/learning/incident-response/) track.*
 
 ## 1. Incident Metadata
 

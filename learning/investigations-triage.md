@@ -4,7 +4,7 @@ title: "Investigations & Triage 101"
 permalink: /learning/investigations-triage/
 ---
 
-[← Back to Security Operations 101](/learning/security-operations/)
+[← Back to Learning](/learning/)
 
 Triage is the discipline of taking an alert, which is a claim that something bad happened, and turning it into a decision backed by evidence. Everything below is the process for doing that consistently, at speed, without guessing.
 
