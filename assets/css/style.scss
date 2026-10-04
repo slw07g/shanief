@@ -776,3 +776,103 @@ div.highlight {
   color: white;
   box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
 }
+
+// --- Learning Hub ---
+.audience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.audience-card {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-left: 4px solid var(--accent-primary);
+  padding: 1rem 1.25rem;
+  border-radius: 10px;
+
+  .audience-title {
+    display: block;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--text-main);
+    margin-bottom: 0.4rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #475569;
+    margin: 0;
+  }
+}
+
+.track-card {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(129, 140, 248, 0.25);
+  padding: 2rem;
+  border-radius: 20px;
+  margin-top: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    background: white;
+    box-shadow: 0 20px 40px rgba(129, 140, 248, 0.15);
+  }
+
+  .track-level {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--accent-primary);
+  }
+
+  .track-title {
+    display: block;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: var(--text-main);
+    margin: 0.4rem 0 0.75rem;
+
+    &:hover { color: var(--accent-primary); }
+  }
+
+  .track-desc {
+    color: #475569;
+    line-height: 1.7;
+  }
+
+  .track-modules {
+    padding-left: 1.25rem;
+    line-height: 2;
+
+    a {
+      color: #4f46e5;
+      font-weight: 600;
+
+      &:hover { color: var(--accent-secondary); }
+    }
+  }
+
+  .track-cta {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-weight: 700;
+    color: var(--accent-primary);
+
+    &:hover { transform: translateX(4px); }
+  }
+}
+
+.tracks-note {
+  margin-top: 1.5rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
